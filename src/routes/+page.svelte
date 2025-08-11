@@ -1,6 +1,8 @@
 <script lang="ts">
 	import Ping from '$lib/components/Ping.svelte';
 	import Badge from '$lib/components/Badge.svelte';
+	import Lens from '$lib/components/Lens.svelte';
+	import Play from '$lib/components/Play.svelte';
 </script>
 
 <div class="w-screen h-screen grid place-content-center">
@@ -23,5 +25,10 @@
 			pingFilled
 			rounded={false}
 		/>
+
+		<Lens color="#FFF" bgColor="#F00" />
+		<Lens color="#FFF" bgColor="#F00" rounded={false} />
+		<Play color="#F00" bgColor="#000" />
+		<Play color="#F00" bgColor="#000" rounded={false} />
 	</div>
 </div>

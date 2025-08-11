@@ -124,3 +124,35 @@ html {
 		opacity: 1;
 	}
 }
+
+@keyframes lens-flip {
+	0% {
+		transform: rotate(0deg);
+		animation-timing-function: cubic-bezier(0.5, 0, 0, 1);
+	}
+	25% {
+		transform: rotate(0deg);
+		animation-timing-function: cubic-bezier(0.5, 0, 0, 1);
+	}
+	50% {
+		transform: rotate(90deg);
+		animation-timing-function: cubic-bezier(0.5, 0, 0, 1);
+	}
+	75% {
+		transform: rotate(0deg);
+		animation-timing-function: cubic-bezier(0.5, 0, 0, 1);
+	}
+	100% {
+		transform: rotate(90deg);
+		animation-timing-function: cubic-bezier(0.5, 0, 0, 1);
+	}
+}
+
+@keyframes play-button-fill {
+	0% {
+		transform: scale(0);
+	}
+	100% {
+		transform: scale(1);
+	}
+}

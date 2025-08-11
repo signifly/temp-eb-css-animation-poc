@@ -5,6 +5,7 @@
 	export let pingFilled: boolean = false;
 	export let bgColor: string = '#FF0000';
 	export let rounded: boolean = true;
+	export let animated: boolean = true;
 </script>
 
 <div
@@ -19,7 +20,9 @@
 	<slot />
 
 	<div
-		class="absolute inset-y-0 left-0 right-0 [animation:badge-fill-sweep-x_8.8s_linear_infinite] z-0"
+		class={`absolute inset-y-0 left-0 right-0 ${
+			animated ? '[animation:badge-fill-sweep-x_8.8s_linear_infinite]' : ''
+		} z-0`}
 		style={`background-color:${bgColor};`}
 	></div>
 </div>

@@ -27,8 +27,8 @@
 	{#each chars as char, i}
 		<span
 			class={`inline-block 
-            ${animation === 'appear' && '[animation:text-appear_0.1s_both]'} 
-            ${animation === 'letters-up-stagger' && '[animation:text-letters-up-stagger_0.4s_both]'}
+            ${animation === 'appear' && '[animation:text-appear_6s_both_linear_infinite]'} 
+            ${animation === 'letters-up-stagger' && '[animation:text-letters-up-stagger_6s_both_linear_infinite]'}
             ${animation === 'none' && 'opacity-100'}`}
 			style:animation-delay={delayFor(i, chars.length) + 's'}
 		>

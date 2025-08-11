@@ -15,22 +15,22 @@
 		<Ping pingColor="#00F" bgColor="#FFF" pingFilled={true} />
 
 		<Badge pingColor="#FFF" bgColor="#F00">
-			<Text animation="appear" text="Lige nu" textColor="#FFF" />
+			<Text animation="none" text="Lige nu" textColor="#FFF" />
 		</Badge>
 
 		<Badge pingColor="#F00" bgColor="#FF0" pingFilled>
-			<Text animation="appear" text="Breaking" textColor="#000" />
+			<Text animation="none" text="Breaking" textColor="#000" />
 		</Badge>
 
 		<Badge pingColor="#F00" bgColor="#000" pingFilled rounded={false}>
-			<Text animation="appear" text="Breaking" textColor="#FFF" />
+			<Text animation="none" text="Breaking" textColor="#FFF" />
 		</Badge>
 
-		<Badge pingColor="#F00" bgColor="#000" pingFilled>
-			<Text animation="letters-up-stagger" text="Opdateres" textColor="#FFF" />
+		<Badge pingColor="#F00" bgColor="#000" pingFilled animated={false}>
+			<Text animation="appear" text="LIVE" textColor="#FFF" />
 		</Badge>
 
-		<Badge pingColor="#FFF" bgColor="#F00" pingFilled rounded={false}>
+		<Badge pingColor="#FFF" bgColor="#F00" pingFilled rounded={false} animated={false}>
 			<Text animation="letters-up-stagger" text="Opdateres" textColor="#FFF" />
 		</Badge>
 

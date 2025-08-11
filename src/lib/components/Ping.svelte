@@ -9,7 +9,7 @@
 <div
 	class="h-[30px] w-[30px] relative {rounded
 		? 'rounded-md'
-		: 'rounded-full'} overflow-hidden grid place-content-center"
+		: ''} overflow-hidden grid place-content-center"
 	style={bgColor ? `background-color:${bgColor};` : ''}
 >
 	{#if pingFilled}

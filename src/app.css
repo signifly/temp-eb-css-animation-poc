@@ -237,3 +237,26 @@ html {
 		animation-timing-function: cubic-bezier(0.5, 0, 0, 1);
 	}
 }
+
+@keyframes dot-bob {
+	0% {
+		transform: translateY(0);
+		animation-timing-function: cubic-bezier(0.5, 0, 0, 1);
+	}
+	40% {
+		transform: translateY(-3px);
+		animation-timing-function: cubic-bezier(0.5, 0, 0, 1);
+	}
+	70% {
+		transform: translateY(0);
+		animation-timing-function: cubic-bezier(0.5, 0, 0, 1);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+.dot {
+	animation: dot-bob var(--play-duration, 1.2s) infinite both;
+	will-change: transform;
+}

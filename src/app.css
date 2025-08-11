@@ -1,0 +1,168 @@
+@import 'tailwindcss';
+
+@font-face {
+	font-family: 'Breaking Text Condensed';
+	src: url('/BreakingTextCondensed-DemiBold.woff2') format('woff2');
+	font-style: italic;
+	font-display: swap;
+}
+
+@theme {
+	--font-sans:
+		'Breaking Text Condensed', ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica,
+		Arial, 'Apple Color Emoji', 'Segoe UI Emoji';
+}
+
+html {
+	font-family: var(--font-sans);
+}
+
+@keyframes innerRipple {
+	0% {
+		opacity: 0;
+		transform: scale(0);
+		animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+	}
+	20% {
+		opacity: 1;
+		transform: scale(1);
+		animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+	}
+	80% {
+		opacity: 1;
+		transform: scale(1.5);
+		animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+	}
+	100% {
+		opacity: 0;
+		transform: scale(6);
+	}
+}
+
+@keyframes outerRipple {
+	0% {
+		opacity: 0;
+		animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+	}
+	20% {
+		opacity: 1;
+		animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes rippleSizeInner {
+	0% {
+		width: 0;
+		height: 0;
+		opacity: 0;
+		animation-timing-function: cubic-bezier(0, 0, 0, 1);
+	}
+	30% {
+		width: var(--pause-size);
+		height: var(--pause-size);
+		opacity: 1;
+	}
+	64% {
+		width: var(--pause-size);
+		height: var(--pause-size);
+		opacity: 1;
+	}
+	100% {
+		animation-timing-function: cubic-bezier(1, 0, 1, 1);
+		width: var(--target-size);
+		height: var(--target-size);
+		opacity: 0;
+	}
+}
+
+@keyframes rippleSizeOuter {
+	0% {
+		width: 0;
+		height: 0;
+		opacity: 0;
+		animation-timing-function: cubic-bezier(0, 0, 0, 1);
+	}
+	30% {
+		width: var(--pause-size);
+		height: var(--pause-size);
+		opacity: 1;
+	}
+	60% {
+		width: var(--pause-size);
+		height: var(--pause-size);
+		opacity: 1;
+	}
+	100% {
+		animation-timing-function: cubic-bezier(1, 0, 1, 1);
+		width: var(--target-size);
+		height: var(--target-size);
+		opacity: 0;
+	}
+}
+
+@keyframes fillX {
+	0% {
+		transform-origin: right;
+		transform: scaleX(1);
+		animation-timing-function: cubic-bezier(0.5, 0, 0, 1);
+	}
+	45% {
+		transform-origin: right;
+		transform: scaleX(1);
+		animation-timing-function: cubic-bezier(0.5, 0, 0, 1);
+	}
+	50% {
+		transform-origin: right;
+		transform: scaleX(0);
+		animation-timing-function: cubic-bezier(0.5, 0, 0, 1);
+	}
+	51% {
+		transform-origin: left;
+		transform: scaleX(0);
+		animation-timing-function: cubic-bezier(0.5, 0, 0, 1);
+	}
+	56% {
+		transform-origin: left;
+		transform: scaleX(1);
+		animation-timing-function: cubic-bezier(0.5, 0, 0, 1);
+	}
+	100% {
+		transform-origin: left;
+		transform: scaleX(1);
+		animation-timing-function: cubic-bezier(0.5, 0, 0, 1);
+	}
+}
+
+@keyframes textFollowFillX {
+	0% {
+		transform: translateX(0);
+		opacity: 1;
+		animation-timing-function: cubic-bezier(0.5, 0, 0, 1);
+	}
+	45% {
+		transform: translateX(0);
+		opacity: 1;
+		animation-timing-function: cubic-bezier(0.5, 0, 0, 1);
+	}
+	50% {
+		transform: translateX(4px);
+		opacity: 0;
+		animation-timing-function: cubic-bezier(0.5, 0, 0, 1);
+	}
+	51% {
+		transform: translateX(-2px);
+		opacity: 0;
+	}
+	56% {
+		transform: translateX(0px);
+		opacity: 1;
+		animation-timing-function: cubic-bezier(0.5, 0, 0, 1);
+	}
+	100% {
+		transform: translateX(0px);
+		opacity: 1;
+	}
+}

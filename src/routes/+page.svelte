@@ -3,6 +3,7 @@
 	import Badge from '$lib/components/Badge.svelte';
 	import Lens from '$lib/components/Lens.svelte';
 	import Play from '$lib/components/Play.svelte';
+	import Text from '$lib/components/Text.svelte';
 </script>
 
 <div class="w-screen h-screen grid place-content-center">
@@ -13,18 +14,25 @@
 
 		<Ping pingColor="#00F" bgColor="#FFF" pingFilled={true} />
 
-		<Badge pingColor="#FFF" textColor="#FFF" bgColor="#F00" text="Lige nu" />
+		<Badge pingColor="#FFF" bgColor="#F00">
+			<Text animation="appear" text="Lige nu" textColor="#FFF" />
+		</Badge>
 
-		<Badge pingColor="#F00" textColor="#000" bgColor="#FF0" text="Breaking" pingFilled />
+		<Badge pingColor="#F00" bgColor="#FF0" pingFilled>
+			<Text animation="appear" text="Breaking" textColor="#000" />
+		</Badge>
 
-		<Badge
-			pingColor="#F00"
-			textColor="#FFF"
-			bgColor="#000"
-			text="Breaking"
-			pingFilled
-			rounded={false}
-		/>
+		<Badge pingColor="#F00" bgColor="#000" pingFilled rounded={false}>
+			<Text animation="appear" text="Breaking" textColor="#FFF" />
+		</Badge>
+
+		<Badge pingColor="#F00" bgColor="#000" pingFilled>
+			<Text animation="letters-up-stagger" text="Opdateres" textColor="#FFF" />
+		</Badge>
+
+		<Badge pingColor="#FFF" bgColor="#F00" pingFilled rounded={false}>
+			<Text animation="letters-up-stagger" text="Opdateres" textColor="#FFF" />
+		</Badge>
 
 		<Lens color="#FFF" bgColor="#F00" />
 		<Lens color="#FFF" bgColor="#F00" rounded={false} />

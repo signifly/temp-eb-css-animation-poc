@@ -26,10 +26,10 @@
 
 	<span
 		style={`--target-size: 20px; --pause-size: 15px; border-color:${pingColor};`}
-		class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full [border-width:1px] [animation:rippleSizeInner_1.1s_infinite] [animation-delay:0s]"
+		class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full [border-width:1px] [animation:ping-ripple-inner_1.1s_infinite] [animation-delay:0s]"
 	></span>
 	<span
 		style={`--target-size: 30px; --pause-size: 22px; border-color:${pingColor};`}
-		class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full [border-width:1px] [animation:rippleSizeOuter_1.1s_infinite] [animation-delay:0.1s]"
+		class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full [border-width:1px] [animation:ping-ripple-outer_1.1s_infinite] [animation-delay:0.1s]"
 	></span>
 </div>

@@ -17,43 +17,7 @@ html {
 	font-family: var(--font-sans);
 }
 
-@keyframes innerRipple {
-	0% {
-		opacity: 0;
-		transform: scale(0);
-		animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
-	}
-	20% {
-		opacity: 1;
-		transform: scale(1);
-		animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
-	}
-	80% {
-		opacity: 1;
-		transform: scale(1.5);
-		animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
-	}
-	100% {
-		opacity: 0;
-		transform: scale(6);
-	}
-}
-
-@keyframes outerRipple {
-	0% {
-		opacity: 0;
-		animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
-	}
-	20% {
-		opacity: 1;
-		animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
-	}
-	100% {
-		opacity: 0;
-	}
-}
-
-@keyframes rippleSizeInner {
+@keyframes ping-ripple-inner {
 	0% {
 		width: 0;
 		height: 0;
@@ -71,14 +35,13 @@ html {
 		opacity: 1;
 	}
 	100% {
-		animation-timing-function: cubic-bezier(1, 0, 1, 1);
 		width: var(--target-size);
 		height: var(--target-size);
 		opacity: 0;
 	}
 }
 
-@keyframes rippleSizeOuter {
+@keyframes ping-ripple-outer {
 	0% {
 		width: 0;
 		height: 0;
@@ -96,14 +59,13 @@ html {
 		opacity: 1;
 	}
 	100% {
-		animation-timing-function: cubic-bezier(1, 0, 1, 1);
 		width: var(--target-size);
 		height: var(--target-size);
 		opacity: 0;
 	}
 }
 
-@keyframes fillX {
+@keyframes badge-fill-sweep-x {
 	0% {
 		transform-origin: right;
 		transform: scaleX(1);
@@ -136,21 +98,18 @@ html {
 	}
 }
 
-@keyframes textFollowFillX {
+@keyframes badge-text-slide-sync {
 	0% {
 		transform: translateX(0);
 		opacity: 1;
-		animation-timing-function: cubic-bezier(0.5, 0, 0, 1);
 	}
 	45% {
 		transform: translateX(0);
 		opacity: 1;
-		animation-timing-function: cubic-bezier(0.5, 0, 0, 1);
 	}
 	50% {
 		transform: translateX(4px);
 		opacity: 0;
-		animation-timing-function: cubic-bezier(0.5, 0, 0, 1);
 	}
 	51% {
 		transform: translateX(-2px);
@@ -159,7 +118,6 @@ html {
 	56% {
 		transform: translateX(0px);
 		opacity: 1;
-		animation-timing-function: cubic-bezier(0.5, 0, 0, 1);
 	}
 	100% {
 		transform: translateX(0px);

@@ -77,8 +77,9 @@
 				<Text animation="letters-up-stagger" text="Opdateres" textColor="#FFF" />
 			</Badge>
 
-			<p>mangler</p>
-			<p>mangler</p>
+			<Plus color="#000" />
+
+			<Plus color="#FFFFFF" />
 
 			<Ping pingColor="#F00" bgColor="#FF0" pingFilled={true} />
 
@@ -173,10 +174,6 @@
 			<Dots color="#FFF" bgColor="#F00" />
 
 			<Dots color="#FFF" bgColor="#F00" rounded={false} />
-
-			<Plus color="#000" />
-
-			<Plus color="#FFFFFF" />
 		</div>
 
 		<!-- Customizer -->

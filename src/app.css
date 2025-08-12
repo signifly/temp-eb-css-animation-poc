@@ -19,48 +19,40 @@ html {
 
 @keyframes ping-ripple-inner {
 	0% {
-		width: 0;
-		height: 0;
+		scale: 0;
 		opacity: 0;
 		animation-timing-function: cubic-bezier(0, 0, 0, 1);
 	}
 	30% {
-		width: var(--pause-size);
-		height: var(--pause-size);
+		scale: var(--pause-scale, 0.75);
 		opacity: 1;
 	}
 	64% {
-		width: var(--pause-size);
-		height: var(--pause-size);
+		scale: var(--pause-scale, 0.75);
 		opacity: 1;
 	}
 	100% {
-		width: var(--target-size);
-		height: var(--target-size);
+		scale: 1;
 		opacity: 0;
 	}
 }
 
 @keyframes ping-ripple-outer {
 	0% {
-		width: 0;
-		height: 0;
+		scale: 0;
 		opacity: 0;
 		animation-timing-function: cubic-bezier(0, 0, 0, 1);
 	}
 	30% {
-		width: var(--pause-size);
-		height: var(--pause-size);
+		scale: var(--pause-scale, 0.75);
 		opacity: 1;
 	}
 	60% {
-		width: var(--pause-size);
-		height: var(--pause-size);
+		scale: var(--pause-scale, 0.75);
 		opacity: 1;
 	}
 	100% {
-		width: var(--target-size);
-		height: var(--target-size);
+		scale: 1;
 		opacity: 0;
 	}
 }

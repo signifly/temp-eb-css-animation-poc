@@ -32,7 +32,7 @@
             ${animation === 'none' && 'opacity-100'}`}
 			style:animation-delay={delayFor(i, chars.length) + 's'}
 		>
-			{char}
+			{char === ' ' ? '\u00A0' : char}
 		</span>
 	{/each}
 </p>
